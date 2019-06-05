@@ -1,4 +1,4 @@
-# College Exercises
+# College Exercises using the C language.
 # English:
 Simple code challenges written with the help of my classmates for curriculum activities. Each one of those was proposed by my professors as practice study material and to refine our Computer Science skills.
 
