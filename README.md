@@ -18,7 +18,7 @@ Conteúdo:
 
 
 # English:
-Simple programs developed with colleagues and based on activities proposed by teachers as complementary material
+Simple programs developed with colleagues and based on activities proposed by professors as complementary material
 for training in Computer Science.
 
 Content:
