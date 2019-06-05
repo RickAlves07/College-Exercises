@@ -1,5 +1,5 @@
 /*	CENTRO UNIVERSITARIO CARIOCA - UNICARIOCA
-	AV3 - Cifra de Cesar V 2.0 - Programação Estruturada - 432	
+	AV3 - Cifra de Cesar V 2.0 - ProgramaÃ§Ã£o Estruturada - 432	
 	RICK OLIVEIRA ALVES		2017101842							*/
 	
 #include <stdio.h>
@@ -18,7 +18,7 @@ setlocale(LC_ALL,"Portuguese");
 		printf("\n[1] Cifrar uma mensagem");
 	    printf("\n[2] Decifrar uma mensagem");
 	    printf("\n[0] Sair");
-	    printf("\n\nDigite sua opção: ");
+	    printf("\n\nDigite sua opÃ§Ã£o: ");
 	    scanf("%i", &opcao);
 	        
 		switch(opcao){
@@ -56,7 +56,7 @@ setlocale(LC_ALL,"Portuguese");
 	return 0;
 }
 
-/*Função Cifrar*/
+/*FunÃ§Ã£o Cifrar*/
 int cifrar(void){
 int chave, i, cont=0;
 char msg[100]={0}, letra;
@@ -67,19 +67,19 @@ char msg[100]={0}, letra;
 	printf("\nDigite a mensagem: ");
 	fflush(stdin);
 	gets(msg);
-	printf("\nDigite uma senha númerica: ");
+	printf("\nDigite uma senha nÃºmerica: ");
 	scanf("%d", &chave);
 	
 	/*Ler toda a mensagem*/
 	for(i=0; msg[i]!='\0'; ++i){       		
 		letra=msg[i];
 		
-		/*Letras minúsculas*/
+		/*Letras minÃºsculas*/
 		if(letra>='a' && letra<='z'){
-			/*Codificando a letra ou número com a soma da senha*/
+			/*Codificando a letra ou nÃºmero com a soma da senha*/
 			letra=letra+chave;
-			/*loop até que a letra ou numero esteja dentro do intervalo que corresponde
-			ao caracter, no caso, intervalo de 'a' até 'z' na tabela ASCII*/
+			/*loop atÃ© que a letra ou numero esteja dentro do intervalo que corresponde
+			ao caracter, no caso, intervalo de 'a' atÃ© 'z' na tabela ASCII*/
 			while(letra>'z' || letra<'a'){
 				letra=letra-26;
 			}
@@ -87,19 +87,19 @@ char msg[100]={0}, letra;
 			msg[i]=letra;
 		}		
 		
-		/*Letras maiúsculas*/
+		/*Letras maiÃºsculas*/
 		if(letra>='A' && letra<='Z'){
 			letra=letra+chave; 
-			while(letra>'Z' || letra<'A'){	/*Intervalo de 'A' até 'Z' na tabela ASCII*/
+			while(letra>'Z' || letra<'A'){	/*Intervalo de 'A' atÃ© 'Z' na tabela ASCII*/
 				letra=letra-26;
 			}			
 			msg[i]=letra;						
 		}	
 		
-		/*Números*/
+		/*NÃºmeros*/
 		if(letra>='0' && letra<='9'){
 			letra=letra+chave;
-			while(letra>'9' || letra<'0'){	/*Intervalo de '0' até '9' na tabela ASCII*/
+			while(letra>'9' || letra<'0'){	/*Intervalo de '0' atÃ© '9' na tabela ASCII*/
 				letra=letra-10;	
 			}
 			msg[i]=letra;						
@@ -124,16 +124,16 @@ char msg[100]={0}, letra;
     	return 0;
 }
 
-/*Função decifrar*/
+/*FunÃ§Ã£o decifrar*/
 int decifrar(void){
 	char msg[100]={0}, letra;
 	int chave, i, cont=0;
 
-	/*Abrir arquivo com mensagem cifrada e ler sem alterar seu conteúdo*/
+	/*Abrir arquivo com mensagem cifrada e ler sem alterar seu conteÃºdo*/
 	FILE *arquivo;
 	    arquivo=fopen("arqIn.txt.", "r");
 	    if(!arquivo){
-	    	printf("\nArquivo não encontrado.\n");
+	    	printf("\nArquivo nÃ£o encontrado.\n");
 			return 1;
 	  	}
 		else{
@@ -150,12 +150,12 @@ int decifrar(void){
 			for(i=0; msg[i]!='\0'; ++i){
 	        	letra=msg[i];
 				
-				/*Letras minúsculas*/
+				/*Letras minÃºsculas*/
 				if(letra>='a' && letra<='z'){
-					/*decodificando a letra ou número com a subtração da senha*/
+					/*decodificando a letra ou nÃºmero com a subtraÃ§Ã£o da senha*/
 					letra=letra-chave;
-					/*loop até que a letra ou numero esteja dentro do intervalo que corresponde
-					ao caracter, no caso, intervalo de 'a' até 'z' na tabela ASCII*/
+					/*loop atÃ© que a letra ou numero esteja dentro do intervalo que corresponde
+					ao caracter, no caso, intervalo de 'a' atÃ© 'z' na tabela ASCII*/
 					while(letra>'z' || letra<'a'){
 						letra=letra+26;
 					}	
@@ -163,7 +163,7 @@ int decifrar(void){
 					msg[i]=letra;
 				}
 				
-				/*Letras maiúsculas*/	
+				/*Letras maiÃºsculas*/	
 				if(letra>='A' && letra<='Z'){
 					letra=letra-chave;
 					while(letra>'Z' || letra<'A'){
@@ -172,7 +172,7 @@ int decifrar(void){
 					msg[i]=letra;
 				}
 				
-				/*Números*/
+				/*NÃºmeros*/
 				if(letra>='0' && letra<='9'){
 					letra=letra-chave;
 					while(letra>'9' || letra<'0'){
