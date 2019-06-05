@@ -1,5 +1,5 @@
 /*	CENTRO UNIVERSITARIO CARIOCA - UNICARIOCA
-	ATIVIDADE PR¡TICA SUPERVISIONADA - ProgramaÁ„o Estruturada - 432	
+	ATIVIDADE PR√ÅTICA SUPERVISIONADA - Programa√ß√£o Estruturada - 432	
 	RICK OLIVEIRA ALVES		2017101842							*/
 
 #include <stdio.h>
@@ -18,12 +18,12 @@ setlocale(LC_ALL,"portuguese");
     while (1){
         do{
         	system("cls");
-			printf("\n--- Lista de Funcion·rios ---\n");
+			printf("\n--- Lista de Funcion√°rios ---\n");
             printf("\nMenu Principal\n");
-			printf("\n[1] Cadastrar funcion·rio");
-            printf("\n[2] Exibir lista de funcion·rios cadastrados");
+			printf("\n[1] Cadastrar funcion√°rio");
+            printf("\n[2] Exibir lista de funcion√°rios cadastrados");
             printf("\n[0] Sair");
-            printf("\n\nDigite sua opÁ„o: ");
+            printf("\n\nDigite sua op√ß√£o: ");
             scanf("%i", &opcao);
             
         }while((opcao<1) && (opcao>3));
@@ -31,7 +31,7 @@ setlocale(LC_ALL,"portuguese");
 		switch(opcao){
             case 1:
                 if(cadastrar()==0)
-                    printf("\nFuncion·rio cadastrado!\n");
+                    printf("\nFuncion√°rio cadastrado!\n");
                     printf("\n");
                     system("pause");
                 	break;
@@ -50,7 +50,7 @@ setlocale(LC_ALL,"portuguese");
     }
 }
 
-/*InformaÁıes do endereÁo do funcion·rio*/
+/*Informa√ß√µes do endere√ßo do funcion√°rio*/
 struct endereco{
 	char end[temp];
 	char numero[temp];
@@ -60,7 +60,7 @@ struct endereco{
 	char cep[temp];
 };
 
-/*InformaÁıes do funcion·rio*/
+/*Informa√ß√µes do funcion√°rio*/
 struct funcionario{
     int codigo;
     char nome[40];
@@ -71,21 +71,21 @@ struct funcionario{
    	struct endereco casa;
 };
 
-/*Cadastrar funcion·rio*/
+/*Cadastrar funcion√°rio*/
 int cadastrar(void){
 	struct funcionario fun;										getchar(); // limpar
 	system("cls");
 	
-	printf("\n--- Lista de Funcion·rios ---\n");
-    printf("\nAdicionar Funcion·rio\n\n");
+	printf("\n--- Lista de Funcion√°rios ---\n");
+    printf("\nAdicionar Funcion√°rio\n\n");
 	
 	printf("Nome: ");		fgets(fun.nome, Nom, stdin);
-    printf("CÛdigo: ");     scanf("%d",&fun.codigo, stdin);		getchar(); // limpar
+    printf("C√≥digo: ");     scanf("%d",&fun.codigo, stdin);		getchar(); // limpar
     printf("Cargo: ");      fgets(fun.cargo, Carg, stdin);
-	printf("Sal·rio: ");    scanf("%f",&fun.sal, stdin);   		getchar(); // limpar
+	printf("Sal√°rio: ");    scanf("%f",&fun.sal, stdin);   		getchar(); // limpar
 	 
-	printf("\nEndereÁo: "); fgets(fun.casa.end, temp, stdin);
-	printf("N˙mero: ");     fgets(fun.casa.numero, temp, stdin);
+	printf("\nEndere√ßo: "); fgets(fun.casa.end, temp, stdin);
+	printf("N√∫mero: ");     fgets(fun.casa.numero, temp, stdin);
 	printf("Bairro: ");     fgets(fun.casa.bairro, temp, stdin);
 	printf("Cidade: ");     fgets(fun.casa.cidade, temp, stdin);
 	printf("Estado: ");     fgets(fun.casa.estado, temp, stdin);
@@ -106,7 +106,7 @@ int cadastrar(void){
 	}
 }
 
-/*Verificar se o funcion·rio j· existe*/
+/*Verificar se o funcion√°rio j√° existe*/
 int verificar(int n){
 	int i=0;
 	int v[100];
@@ -124,7 +124,7 @@ int verificar(int n){
     }
 		for(i=0;i<100;i++){
 			if(v[i]==n){
-				printf("\nCÛdigo j· cadastrado no sistema.");
+				printf("\nC√≥digo j√° cadastrado no sistema.");
 				printf("\n");
 				printf("\n");
 				return 1;
@@ -133,7 +133,7 @@ int verificar(int n){
 	return 0;
 }
 
-/*Calcular os descontos do sal·rio*/
+/*Calcular os descontos do sal√°rio*/
 float salfinal(float sl){
 	float INSS=sl*0.11;
 	float ValeT=sl*0.06;
@@ -142,7 +142,7 @@ float salfinal(float sl){
 	return sfin;
 };
 
-/*Exibir a lista de funcion·rios cadastrados*/
+/*Exibir a lista de funcion√°rios cadastrados*/
 int lista(void){
     FILE *file;
     file=fopen ("Lista.dat", "r");
@@ -151,19 +151,19 @@ int lista(void){
     else{
     	struct funcionario f;
        	system("cls");
-		printf("\n--- Lista de Funcion·rios ---\n");
-    	printf("\nFuncion·rios Cadastrados\n\n");
+		printf("\n--- Lista de Funcion√°rios ---\n");
+    	printf("\nFuncion√°rios Cadastrados\n\n");
         printf("---------------------------------------------------\n");
 		
 		while (fread(&f, sizeof(struct funcionario), 1, file)){
 			printf("\nStatus: %s",f.status);
 			printf("Nome: %s", f.nome);
-            printf("CÛdigo: %d",f.codigo);
+            printf("C√≥digo: %d",f.codigo);
             printf("\nCargo: %s",f.cargo);
-            printf("Sal·rio: R$ %.2f",f.sal); 			
+            printf("Sal√°rio: R$ %.2f",f.sal); 			
 			
-			printf("\n\nEndereÁo: %s",f.casa.end);
-            printf("N∫: %s",f.casa.numero);
+			printf("\n\nEndere√ßo: %s",f.casa.end);
+            printf("N¬∫: %s",f.casa.numero);
             printf("Bairro: %s",f.casa.bairro);
             printf("Cidade: %s",f.casa.cidade);
             printf("Estado: %s",f.casa.estado);
@@ -172,7 +172,7 @@ int lista(void){
         	printf("\n");
            
         	float sfin = salfinal(f.sal);
-        	printf("Sal·rio com descontos: R$ %.2f\n",sfin);
+        	printf("Sal√°rio com descontos: R$ %.2f\n",sfin);
            
             printf("\n");
             printf("---------------------------------------------------");
