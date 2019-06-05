@@ -5,9 +5,9 @@ Simple code challenges written with the help of my classmates for curriculum act
 Content:
 > Algorithms of Math - Discrete Math.c = Exercise for the creation of a mathematical algorithm with the functions of arrangement, permutation and combinatorial analysis.
 
-> Cypher of Caesar - Structured Programming.c = Development of an encryption algorithm based on the Cipher of Caesar, used by Julius Caesar to send and receive messages safely in Rome. Using a number sequence as a password, the algorithm encodes a phrase by traversing the ASCI table in the number of times, in each letter, determined by the password.
+> Ceaser Cypher - Structured Programming.c = Development of an encryption algorithm based on the Cipher of Caesar, used by Julius Caesar to send and receive messages safely in Rome. Using a number sequence as a password, the algorithm encodes a phrase by traversing the ASCI table in the number of times, in each letter, determined by the password.
 
-> Cypher of Caesar - Structured Programming V 2.0.c = Correction of some errors in the encoding. Now the password can also contain letters for encryption.
+> Ceaser Cypher - Structured Programming V 2.0.c = Correction of some errors in the encoding. Now the password can also contain letters for encryption.
 
 > Geometric Shapes - Programming Introduction.c = Code print out diamonds, triangles and squares, with stars (*), receiving an integer as input which determines the size of the geometric figure.
 
@@ -22,9 +22,9 @@ Desafios de desenvolvimento de código simples escritos com a ajuda de meus cole
 Conteúdo:
 > Algorithms of Math - Discrete Math.c = Exercicio para criação de um algoritmo matemático com as funções de arranjo, permutação e análise combinatoria.
 
-> Cypher of Caesar - Structured Programming.c = Desenvolvimento de um algoritmo de cifragem baseado na Cifra de César utilizado por Julio César para enviar e receber mensagens com segurança em Roma. Usando uma sequencia númeria como senha, o algoritmo codifica uma frase percorrendo a tabela ASCI na quantidade de vezes, em cada letra, determinada pela senha.
+> Ceaser Cypher - Structured Programming.c = Desenvolvimento de um algoritmo de cifragem baseado na Cifra de César utilizado por Julio César para enviar e receber mensagens com segurança em Roma. Usando uma sequencia númeria como senha, o algoritmo codifica uma frase percorrendo a tabela ASCI na quantidade de vezes, em cada letra, determinada pela senha.
 
-> Cypher of Caesar - Structured Programming V 2.0.c = Correção de alguns erros na codificação. Agora a senha tambem pode conter letras para a cifragem.
+> Ceaser Cypher - Structured Programming V 2.0.c = Correção de alguns erros na codificação. Agora a senha tambem pode conter letras para a cifragem.
 
 > Geometric Shapes - Programming Introduction.c = Programa que cria losangos, triângulos e quadrados ,com asteriscos (*),  usando um numero inserido para determinar seu tamanho.
 
