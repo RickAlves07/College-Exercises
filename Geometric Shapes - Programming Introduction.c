@@ -1,5 +1,5 @@
-/*	CENTRO UNIVERSIT¡RIO CARIOCA - UNICARIOCA
-	ATIVIDADE PR¡TICA SUPERVISIONADA - INTRODU«√O A PROGRAMA«√O - 442
+/*	CENTRO UNIVERSIT√ÅRIO CARIOCA - UNICARIOCA
+	ATIVIDADE PR√ÅTICA SUPERVISIONADA - INTRODU√á√ÉO A PROGRAMA√á√ÉO - 442
 	
 	GABRIEL ARRUDA DE OLIVEIRA				2017100178	
 	JOHANN ABENTROTH MENICHELLI PALHEIROS	2017100581	
@@ -15,21 +15,21 @@ int main ()
 setlocale(LC_ALL,"Portuguese");
 int escolha, lados, estrelasL, estrelasT, estrelasQ, linhasL, linhasT, linhasQ, fim, margem;
 char denovo='\0';
-	printf("\n*****Este programa cria formas geomÈtricas.*****");	
-		/* RepetiÁ„o do menu caso escolha imprir uma nova figura. */
+	printf("\n*****Este programa cria formas geom√©tricas.*****");	
+		/* Repeti√ß√£o do menu caso escolha imprir uma nova figura. */
 		while (denovo!='N' && denovo!='n'){		
-			printf("\n\nEscolha uma das opÁıes: ");
+			printf("\n\nEscolha uma das op√ß√µes: ");
 			printf("\n[1] Losango");
-			printf("\n[2] Tri‚ngulo");
+			printf("\n[2] Tri√¢ngulo");
 			printf("\n[3] Quadrado");
 			printf("\n[0] Sair\n");
-			printf("\nOpÁ„o: "); 
+			printf("\nOp√ß√£o: "); 
 			scanf("%d", &escolha);
 			/* Escolha da figura a ser gerada. */
 			switch (escolha){			
 				/* Se escolha for losango. */
 				case (1):
-					printf("\nVocÍ escolheu losango.\n");
+					printf("\nVoc√™ escolheu losango.\n");
 					printf("Digite a quantidade de *(s) para os lados: ");
 					scanf("%d", &lados);						
 						printf("\n");					    
@@ -66,13 +66,13 @@ char denovo='\0';
 						}
 					break;
 	
-				/* Se escolha for tri‚ngulo. */
+				/* Se escolha for tri√¢ngulo. */
 				case (2):
-					printf("\nVocÍ escolheu Tri‚ngulo.\n");
+					printf("\nVoc√™ escolheu Tri√¢ngulo.\n");
 					printf("Digite a quantidade de *(s) para os lados: ");
 					scanf("%d", &lados);
 						printf("\n");
-						/* Montagem da estrutura do tri‚ngulo. */
+						/* Montagem da estrutura do tri√¢ngulo. */
 						for(estrelasT=1; estrelasT<=lados; estrelasT++){
 	        				for(linhasT=1; linhasT<=estrelasT; linhasT++){ 
 	            				if(linhasT==1 || linhasT==estrelasT || estrelasT==lados)	            				
@@ -86,7 +86,7 @@ char denovo='\0';
 						
 				/* Se escolha for quadrado. */
 				case (3):
-					printf("\nVocÍ escolheu Quadrado.\n");
+					printf("\nVoc√™ escolheu Quadrado.\n");
 					printf("Digite a quantidade de *(s) para os lados: ");
 					scanf("%d", &lados);
 						printf("\n"); 
@@ -102,15 +102,15 @@ char denovo='\0';
 						}
 					break;
 						
-				/* Se escolha for diferente das 3 opÁıes dadas. */
+				/* Se escolha for diferente das 3 op√ß√µes dadas. */
 				case (0):
 					printf("\nSair\n");
 					return 0;				
 				default:
-					printf("\nN„o È uma opÁ„o valÌda.\n");
+					printf("\nN√£o √© uma op√ß√£o val√≠da.\n");
 					break;
 			}
-			/* VerificaÁ„o do laÁo de repetiÁ„o. */
+			/* Verifica√ß√£o do la√ßo de repeti√ß√£o. */
 			printf("\nDeseja criar uma nova forma? (S/N): ");	
 			denovo = getche();	
 		}
