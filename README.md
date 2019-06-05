@@ -1,6 +1,6 @@
 # College Exercises
 # Português:
-Desafios de desenvolvimento de código simples escritos com a ajuda de meus colegas para atividades curriculares na faculdade. Cada um deles foi proposto pelos meus professores como material de estudo prático e para aperfeiçoar nossas habilidades em Ciência da Computação.
+Desafios de desenvolvimento de código simples escritos com a ajuda de meus colegas para atividades curriculares na faculdade. Cada um deles foi proposto pelos professores como material de estudo prático e para aperfeiçoar nossas habilidades em Ciência da Computação.
 
 Conteúdo:
 > APS - ED - 422.c = Teste de criação e comportamento de uma lista encadeada, onde cada elemento contém um valor e aponta para o próximo elemento, e assim sucessivamente ate o ultimo elemento inserido que apontará para a posição do primeiro elemento.
