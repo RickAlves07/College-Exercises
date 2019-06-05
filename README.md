@@ -1,7 +1,6 @@
 # College Exercises
 # Português:
-Programas simples desenvolvidos com colegas e com base nas atividades propostas pelos professores como material complementar 
-para a formação em Ciência da Computação.
+Desafios de desenvolvimento de código simples escritos com a ajuda de meus colegas para atividades curriculares na faculdade. Cada um deles foi proposto pelos meus professores como material de estudo prático e para aperfeiçoar nossas habilidades em Ciência da Computação.
 
 Conteúdo:
 > APS - ED - 422.c = Teste de criação e comportamento de uma lista encadeada, onde cada elemento contém um valor e aponta para o próximo elemento, e assim sucessivamente ate o ultimo elemento inserido que apontará para a posição do primeiro elemento.
@@ -18,8 +17,7 @@ Conteúdo:
 
 
 # English:
-Simple programs developed with colleagues and based on activities proposed by professors as complementary material
-for training in Computer Science.
+Simple code challenges written with the help of my classmates for curriculum activities. Each one of those was proposed by my professors as practice study material and to refine our Computer Science skills.
 
 Content:
 > APS - ED - 422.c = Creation and behavior test of a linked list, where each element contains a value and points to the next element, and so on until the last element that points to the position of the first element.
