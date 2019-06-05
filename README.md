@@ -1,4 +1,4 @@
-# College-Exercises
+# College Exercises
 # Português:
 Programas simples desenvolvidos com colegas e com base nas atividades propostas pelos professores como material complementar 
 para a formação em Ciência da Computação.
