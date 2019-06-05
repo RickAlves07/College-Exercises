@@ -1,5 +1,5 @@
 /*	CENTRO UNIVERSITARIO CARIOCA - UNICARIOCA
-	ATIVIDADE PR¡TICA SUPERVISIONADA - Matem·tica Discreta - 453
+	ATIVIDADE PR√ÅTICA SUPERVISIONADA - Matem√°tica Discreta - 453
 
 	JOHANN ABENTROTH MENICHELLI PALHEIROS	2017100581
 	PAULO RICARDO MIRANDA GERALDES			2017100583
@@ -11,13 +11,13 @@
 	
 void menu(){
 	system("cls");
-	puts("Matem·tica Discreta");
-	puts("\nEscolha a opÁ„o pretendida:\n");
+	puts("Matem√°tica Discreta");
+	puts("\nEscolha a op√ß√£o pretendida:\n");
 	puts("[1] Arranjo");
-	puts("[2] PermutaÁ„o");
-	puts("[3] An·lise CombinatÛria");
+	puts("[2] Permuta√ß√£o");
+	puts("[3] An√°lise Combinat√≥ria");
 	puts("[0] Sair");
-	printf("\nOpÁ„o: "); 
+	printf("\nOp√ß√£o: "); 
 }
 
 unsigned long long int fatorial(unsigned long long int d){ 
@@ -40,31 +40,31 @@ int opc;
 			case 1: 
 				system("cls");
 				printf("Arranjo\n");
-				printf("\nDigite o n˙mero de elementos do arranjo: ");
+				printf("\nDigite o n√∫mero de elementos do arranjo: ");
 				scanf("%llu", &elemento);
 				printf("Digite o valor do agrupamento do arranjo: ");
 				scanf("%llu", &agrupamento);
 				num=elemento-agrupamento;
 	  			if(num==0)
 	      			num=1;
-					printf("\nFÛrmula \n%llu!˜(%llu-%llu)!", elemento, elemento, agrupamento);
-					printf("\nO fatorial de %llu È %llu",elemento,fatorial(elemento));
-					printf("\nO fatorial de (%llu-%llu) È %llu", elemento, agrupamento, fatorial(num));
+					printf("\nF√≥rmula \n%llu!√∑(%llu-%llu)!", elemento, elemento, agrupamento);
+					printf("\nO fatorial de %llu √© %llu",elemento,fatorial(elemento));
+					printf("\nO fatorial de (%llu-%llu) √© %llu", elemento, agrupamento, fatorial(num));
 					arranjo=fatorial(elemento)/fatorial(num);
-					printf("\nTotal de arranjos formados de %llu elementos agrupados %llu a %llu È %llu\n\n", elemento, agrupamento, agrupamento, arranjo);
+					printf("\nTotal de arranjos formados de %llu elementos agrupados %llu a %llu √© %llu\n\n", elemento, agrupamento, agrupamento, arranjo);
 				
 				break;
 			
 			case 2: 
 				system("cls");
-				printf("PermutaÁ„o\n");
+				printf("Permuta√ß√£o\n");
 				printf("\nDigite o valor que deseja permutar: "); 
 				scanf("%llu", &elemento);
 				if(elemento==0)
 					num=1;   
 				else   
 					num=elemento;
-					printf("\nFÛrmula\n%llu! = ",num);
+					printf("\nF√≥rmula\n%llu! = ",num);
 					while(num!=0){
 						printf("%llu",num);
 						num=num-1;
@@ -72,34 +72,34 @@ int opc;
 							printf("x");
 					}
 					num=elemento;
-					printf("\nA permutaÁ„o de %llu È %llu\n\n", elemento, fatorial(num));
+					printf("\nA permuta√ß√£o de %llu √© %llu\n\n", elemento, fatorial(num));
 				break;
 			
 			case 3:  
 				system("cls");
-				printf("An·lise CombinatÛria\n");
-				printf("\nDigite o n˙mero de de elementos da an·lise: ");
+				printf("An√°lise Combinat√≥ria\n");
+				printf("\nDigite o n√∫mero de de elementos da an√°lise: ");
 				scanf("%llu", &elemento);
-				printf("Digite o valor do agrupamento da an·lise: ");
+				printf("Digite o valor do agrupamento da an√°lise: ");
 				scanf("%llu", &agrupamento);
    				num=elemento-agrupamento;
 	     		if( num==0)
 					num=1; 
-					printf("\nFÛrmula \n%llu!˜(%llu-%llu)!x%llu!", elemento, elemento, agrupamento, agrupamento);
-					printf("\nO fatorial de %llu È %llu", elemento, fatorial(elemento));
-					printf("\nO fatorial de (%llu-%llu) È %llu", elemento, agrupamento, fatorial(num));
-					printf("\nO fatorial de %llu È %llu", agrupamento, fatorial(agrupamento));
+					printf("\nF√≥rmula \n%llu!√∑(%llu-%llu)!x%llu!", elemento, elemento, agrupamento, agrupamento);
+					printf("\nO fatorial de %llu √© %llu", elemento, fatorial(elemento));
+					printf("\nO fatorial de (%llu-%llu) √© %llu", elemento, agrupamento, fatorial(num));
+					printf("\nO fatorial de %llu √© %llu", agrupamento, fatorial(agrupamento));
 
     				arranjo=fatorial(elemento)/(fatorial(num)*fatorial(agrupamento));
     				
-    				printf("\nTotal de CombinaÁıes formadas de %llu elementos agrupados %llu a %llu È %llu\n\n", elemento, agrupamento, agrupamento, arranjo);
+    				printf("\nTotal de Combina√ß√µes formadas de %llu elementos agrupados %llu a %llu √© %llu\n\n", elemento, agrupamento, agrupamento, arranjo);
 				break;
 				
        		case 0:
        			puts("\nSair");
        			break;
 			default:
-				puts("CÛdigo inv·lido");
+				puts("C√≥digo inv√°lido");
 		}
 	system("pause");	
    }while(opc!=0);
