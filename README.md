@@ -1,5 +1,5 @@
 # College-Exercises
-Português:
+# Português:
 Programas simples desenvolvidos com colegas e com base nas atividades propostas pelos professores como material complementar 
 para a formação em Ciência da Computação.
 
@@ -17,7 +17,7 @@ Conteúdo:
 > Cifra de Cesar - PE - 432 V 2.0.c = Correção de alguns erros na codificação. Agora a senha tambem pode conter letras para a cifragem.
 
 
-English:
+# English:
 Simple programs developed with colleagues and based on activities proposed by teachers as complementary material
 for training in Computer Science.
 
