@@ -1,5 +1,5 @@
 /*	CENTRO UNIVERSITARIO CARIOCA - UNICARIOCA
-	AV3 - Cifra de Cesar - Programação Estruturada - 432	
+	AV3 - Cifra de Cesar - ProgramaÃ§Ã£o Estruturada - 432	
 	RICK OLIVEIRA ALVES		2017101842							*/
 	
 #include <stdio.h>
@@ -19,7 +19,7 @@ setlocale(LC_ALL,"Portuguese");
 		printf("\n[1] Cifrar uma mensagem");
     	printf("\n[2] Decifrar uma mensagem");
 	    printf("\n[0] Sair");
-	    printf("\n\nDigite sua opção: ");
+	    printf("\n\nDigite sua opÃ§Ã£o: ");
 	    scanf("%i", &opcao);
 		        
 		switch(opcao){
@@ -31,18 +31,18 @@ setlocale(LC_ALL,"Portuguese");
 				fflush(stdin);
 				gets(msg);
 				fflush(stdin);
-				printf("\nDigite uma senha númerica: ");
+				printf("\nDigite uma senha nÃºmerica: ");
 				scanf("%d", &chave);
 				cifraCesar(msg, cod, chave);
 				chave=0;
 				break;
 									
 	        case 2:
-	 			/*Abrir arquivo com mensagem cifrada e ler sem alterar seu conteúdo*/;
+	 			/*Abrir arquivo com mensagem cifrada e ler sem alterar seu conteÃºdo*/;
 				FILE *arquivo;
 	    			arquivo=fopen("arqIn.txt", "r");
 	    		if(!arquivo){
-	    			printf("\nArquivo não encontrado.\n\n");
+	    			printf("\nArquivo nÃ£o encontrado.\n\n");
 					system("pause");
 	  			}
 				else{
@@ -64,7 +64,7 @@ setlocale(LC_ALL,"Portuguese");
 	return 0;
 }
 
-/*Função Cifrar*/
+/*FunÃ§Ã£o Cifrar*/
 void cifraCesar(char arqIn[], char arqOut[], int k){
 int i, cont=0;
 char letra, msg[100];
@@ -76,12 +76,12 @@ char letra, msg[100];
 	for(i=0; msg[i]!='\0'; ++i){       		
 		letra=msg[i];
 		
-		/*Letras minúsculas*/
+		/*Letras minÃºsculas*/
 		if(letra>='a' && letra<='z'){
-			/*Codificando a letra ou número com a soma da senha*/
+			/*Codificando a letra ou nÃºmero com a soma da senha*/
 			letra=letra+k;
-			/*loop até que a letra ou numero esteja dentro do intervalo que corresponde
-			ao caracter, no caso, intervalo de 'a' até 'z' na tabela ASCII*/
+			/*loop atÃ© que a letra ou numero esteja dentro do intervalo que corresponde
+			ao caracter, no caso, intervalo de 'a' atÃ© 'z' na tabela ASCII*/
 			while(letra>'z' || letra<'a'){
 				letra=letra-26;
 			}
@@ -89,19 +89,19 @@ char letra, msg[100];
 			msg[i]=letra;
 		}		
 		
-		/*Letras maiúsculas*/
+		/*Letras maiÃºsculas*/
 		if(letra>='A' && letra<='Z'){
 			letra=letra+k; 
-			while(letra>'Z' || letra<'A'){	/*Intervalo de 'A' até 'Z' na tabela ASCII*/
+			while(letra>'Z' || letra<'A'){	/*Intervalo de 'A' atÃ© 'Z' na tabela ASCII*/
 				letra=letra-26;
 			}			
 			msg[i]=letra;						
 		}	
 		
-		/*Números*/
+		/*NÃºmeros*/
 		if(letra>='0' && letra<='9'){
 			letra=letra+k;
-			while(letra>'9' || letra<'0'){	/*Intervalo de '0' até '9' na tabela ASCII*/
+			while(letra>'9' || letra<'0'){	/*Intervalo de '0' atÃ© '9' na tabela ASCII*/
 				letra=letra-10;	
 			}
 			msg[i]=letra;						
@@ -134,7 +134,7 @@ char letra, msg[100];
 	}
 }
 
-/*Função decifrar*/
+/*FunÃ§Ã£o decifrar*/
 void decifraCesar(char arqIn[], char arqOut[], int k){
 int i, cont=0;
 char letra, msg[100];
@@ -145,12 +145,12 @@ char letra, msg[100];
 		for(i=0; msg[i]!='\0'; ++i){
         	letra=msg[i];
 			
-			/*Letras minúsculas*/
+			/*Letras minÃºsculas*/
 			if(letra>='a' && letra<='z'){
-				/*decodificando a letra ou número com a subtração da senha*/
+				/*decodificando a letra ou nÃºmero com a subtraÃ§Ã£o da senha*/
 				letra=letra-k;
-				/*loop até que a letra ou numero esteja dentro do intervalo que corresponde
-				ao caracter, no caso, intervalo de 'a' até 'z' na tabela ASCII*/
+				/*loop atÃ© que a letra ou numero esteja dentro do intervalo que corresponde
+				ao caracter, no caso, intervalo de 'a' atÃ© 'z' na tabela ASCII*/
 				while(letra>'z' || letra<'a'){
 					letra=letra+26;
 				}	
@@ -158,7 +158,7 @@ char letra, msg[100];
 				msg[i]=letra;
 			}
 			
-			/*Letras maiúsculas*/	
+			/*Letras maiÃºsculas*/	
 			if(letra>='A' && letra<='Z'){
 				letra=letra-k;
 				while(letra>'Z' || letra<'A'){
@@ -167,7 +167,7 @@ char letra, msg[100];
 				msg[i]=letra;
 			}
 			
-			/*Números*/
+			/*NÃºmeros*/
 			if(letra>='0' && letra<='9'){
 				letra=letra-k;
 				while(letra>'9' || letra<'0'){
