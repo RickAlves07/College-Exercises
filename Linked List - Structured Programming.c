@@ -1,5 +1,5 @@
 /*	CENTRO UNIVERSITARIO CARIOCA - UNICARIOCA
-	ATIVIDADE PR¡TICA SUPERVISIONADA - Estrutura de Dados - 422
+	ATIVIDADE PR√ÅTICA SUPERVISIONADA - Estrutura de Dados - 422
 	RICK OLIVEIRA ALVES						2017101842	*/
 	
 #include <stdio.h>
@@ -23,19 +23,19 @@ int inserir_lista_inicio(elem *noIni, float valor){
 	novono->dado = valor;
 	novono->prox = noIni->prox;
 	noIni->prox = novono;
-	printf("\nN˙mero cadastrado com exito!\n\n");
+	printf("\nN√∫mero cadastrado com exito!\n\n");
 }
 
 void menu(){
 	system("cls");
 	puts("Estrutura de Dados\nLista Encadeada");
-	puts("\nEscolha a opÁ„o pretendida:\n");
+	puts("\nEscolha a op√ß√£o pretendida:\n");
 	puts("[1] Adicionar a lista");
 	puts("[2] Remover da lista");
 	puts("[3] Ver a lista");
-	puts("[4] Consultar uma posiÁ„o na lista");
+	puts("[4] Consultar uma posi√ß√£o na lista");
 	puts("[0] Sair");
-	printf("\nOpÁ„o: ");
+	printf("\nOp√ß√£o: ");
 }
 
 main(){
@@ -61,7 +61,7 @@ setlocale(LC_ALL,"portuguese");
 				case 2:
 					system("cls");
 					consulta = consulta_Lista(noIni, cont);
-					printf("\nO ˙ltimo valor cadastrado È %.\nDeseja remover?(S/N) ", consulta);
+					printf("\nO √∫ltimo valor cadastrado √© %.\nDeseja remover?(S/N) ", consulta);
 					escolha = getche();
 					if(escolha=='s'){
 						excluir = excluir_Lista(noIni, cont);
@@ -70,7 +70,7 @@ setlocale(LC_ALL,"portuguese");
 						break;
 					}
 					else{
-						printf("\n\nN˙mero n„o foi removido.\n\n");
+						printf("\n\nN√∫mero n√£o foi removido.\n\n");
 						break;
 					}
 				case 3:
@@ -80,7 +80,7 @@ setlocale(LC_ALL,"portuguese");
 					break;
 				case 4:
 					system("cls");
-					printf("\nDigite o n˙mero da posiÁ„o: ");
+					printf("\nDigite o n√∫mero da posi√ß√£o: ");
 					scanf("%d", &posicao);
 					consulta = consulta_Lista(noIni, posicao);
 					system("pause");
@@ -89,7 +89,7 @@ setlocale(LC_ALL,"portuguese");
 	       			puts("\nSair");
 	       			break;
 				default:
-					puts("CÛdigo inv·lido");
+					puts("C√≥digo inv√°lido");
 					system("pause");
 			}
 	} while(opc!=0);
@@ -104,7 +104,7 @@ int excluir_Lista(elem *noIni, int posicao){
 		i++;
 	}
 	noexcluir->dado='NULL';
-	printf("\n\nN˙mero removido com exito.\n\n");
+	printf("\n\nN√∫mero removido com exito.\n\n");
 }
 
 int consulta_Lista(elem *noIni, int posicao){
