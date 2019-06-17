@@ -26,7 +26,7 @@ Conteúdo:
 
 > Combinatorics - Discrete Math.c = Exercicio para criação de um algoritmo matemático com as funções de arranjo, permutação e análise combinatoria.
 
-> Geometric Shapes - Programming Introduction.c = Programa que cria losangos, triângulos e quadrados ,com asteriscos (*),  usando um numero inserido para determinar seu tamanho.
+> Geometric Shapes - Programming Introduction.c = Programa que cria losangos, triângulos e quadrados, com asteriscos (*),  usando um numero inserido para determinar seu tamanho.
 
 > Linked List - Data Structure.c = Teste de criação e comportamento de uma lista encadeada, onde cada elemento contém um valor e aponta para o próximo elemento, e assim sucessivamente ate o ultimo elemento inserido que apontará para a posição do primeiro elemento.
 
