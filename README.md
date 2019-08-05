@@ -15,7 +15,7 @@ Content:
 
 > List of Employees - Structured Programming.c =  Create a list of employees of a company using structures to register all your data and information and saving it in a .dat file which can also be displayed through out the program.
 
-
+#
 # Português:
 Desafios de desenvolvimento de código simples escritos com a ajuda de meus colegas para atividades curriculares na faculdade. Cada um deles foi proposto pelos professores como material de estudo prático e para aperfeiçoar nossas habilidades em Ciência da Computação.
 
